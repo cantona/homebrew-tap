@@ -6,6 +6,11 @@ class Xcomm < Formula
   license any_of: ["MIT", "Apache-2.0"]
   head "https://github.com/cantona/xcomm.git", branch: "master"
 
+  livecheck do
+    url :stable
+    strategy :github_latest
+  end
+
   bottle do
     root_url "https://github.com/cantona/homebrew-tap/releases/download/xcomm-0.1.1"
     sha256 cellar: :any_skip_relocation, arm64_tahoe:   "3fcc39ea6e41ff45384599d0828fc1ca02ad370a5927e52f6d329056234b16e9"
