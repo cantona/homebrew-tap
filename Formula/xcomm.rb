@@ -1,8 +1,8 @@
 class Xcomm < Formula
   desc "Serial terminal with a control socket that scripts and AI agents can drive"
   homepage "https://github.com/cantona/xcomm"
-  url "https://github.com/cantona/xcomm/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "3bc453c7f379db663d0350045ff54b69c7d6d1ba7fc775902a5e9fa5f3b030f0"
+  url "https://github.com/cantona/xcomm/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "968dee53d7c4b4af610b7bcd4fd84c4d9594fab63ac948688d8a199b0e0cda1e"
   license any_of: ["MIT", "Apache-2.0"]
   head "https://github.com/cantona/xcomm.git", branch: "master"
 
