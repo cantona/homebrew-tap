@@ -6,6 +6,13 @@ class Xcomm < Formula
   license any_of: ["MIT", "Apache-2.0"]
   head "https://github.com/cantona/xcomm.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/cantona/homebrew-tap/releases/download/xcomm-0.1.1"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "3fcc39ea6e41ff45384599d0828fc1ca02ad370a5927e52f6d329056234b16e9"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "387472f8486e5bd45a596be85730f8e61f9a171f4f7e080fbfb3e2e0d0796e80"
+    sha256 cellar: :any,                 x86_64_linux:  "1c9166df2c54d92e1eb762ac25a9bfd0bc8e117725775920f77ea07a48dc0c93"
+  end
+
   depends_on "rust" => :build
 
   def install
