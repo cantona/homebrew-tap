@@ -11,6 +11,14 @@ class Xcomm < Formula
     strategy :github_latest
   end
 
+  bottle do
+    root_url "https://github.com/cantona/homebrew-tap/releases/download/xcomm-0.1.2"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "017a443313558a9849275fb95e48226f6a707ca9443ff8fe9b2bd2e68734938d"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "22783d986753493183ba0bbac8b81a05a83c863e4657ed412219fe1864cc81e3"
+    sha256 cellar: :any,                 arm64_linux:   "4e7b5e24022151cdc38285c776cbebec61650b72d0a2455359aa10ab60654bf4"
+    sha256 cellar: :any,                 x86_64_linux:  "93b1ac18aa60ff648648fbaabe2be3ed54644a6640823b69cb8f8c45fd503f71"
+  end
+
   depends_on "rust" => :build
 
   def install
